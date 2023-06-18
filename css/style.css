@@ -97,7 +97,7 @@ nav button.navbar-toggler:focus {
 
 .home button:hover {
     color:var(--primary-color);
-    background-color: white;
+    background-color: transparent;
 }
 
 .home img {
