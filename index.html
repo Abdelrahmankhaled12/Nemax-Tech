@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web 3</title>
+    <!-- File Css Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- File Main Css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/49f02d4a75.js" crossorigin="anonymous"></script>
+    <!-- File Animation Css -->
+    <link rel="stylesheet" href="./css/animate.min.css">
 
 </head>
 
@@ -19,103 +24,114 @@
         </video>
     </div>
 
-    <header>
-        <nav class="navbar navbar-expand-lg">
+    <div class="body" id="body">
+        <!-- Start Header -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand ms-2" href="#">Logo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars icon"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mt-auto mb-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/services.html">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/portfolio.html">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/team.html">TEAM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./pages/contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Header -->
+        <!-- Start Home -->
+        <div class="home pb-5">
             <div class="container">
-                <a class="navbar-brand ms-2" href="#">Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars icon"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mt-auto mb-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/about.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/services.html">SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/portfolio.html">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/team.html">TEAM</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./pages/contact.html">CONTACT</a>
-                        </li>
-                    </ul>
+                <div class="row">
+                    <div class="col-lg-7 mt-5">
+                        <h3> We are a specialized company providing cutting-edge services in the exciting realm of
+                            <span> Web3 technology</span>.
+                        </h3>
+                        <p>We pride ourselves on providing quality services in building thriving and engaged Web3
+                            communities, pioneering Web3 marketing and NFT strategies, and providing comprehensive node
+                            management services for running validation nodes. Our mission is to help you achieve your
+                            goals and succeed in the Web3 world.</p>
+                        <button class="pt-2 pb-2 ps-4 pe-4">More details</button>
+                    </div>
+                    <div class="col-lg-5 mt-5">
+                        <!-- <img src="./images/home.jpg" class="img-fluid" alt=""> -->
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+        <!-- End Home -->
 
+        <!-- Start Header -->
 
-    <div class="home pb-5">
-        <div class="container">
+        <div class="about pt-5 pb-5  wow  animate__fadeInUp" data-wow-duration="2s" id="about"">
+            <div class=" container">
+            <div class="title">
+                <i class="fa-solid fa-people-group"></i> About
+            </div>
             <div class="row">
-                <div class="col-lg-7 mt-5">
-                    <h3> We are a specialized company providing cutting-edge services in the exciting realm of Web3
-                        technology. We pride ourselves on delivering high-quality services in building thriving and
-                        engaged Web3 communities, <span>pioneering Web3 marketing and NFT strategies</span> , and
-                        offering
-                        comprehensive node management services for running validator nodes. Our mission is to help you
-                        achieve your goals and succeed in the world of Web3.
-                    </h3>
-                    <button class="pt-2 pb-2 ps-4 pe-4">More details</button>
-                </div>
-                <div class="col-lg-5 mt-5"">
-                    <img src=" ./images/bitcoin-gfcfa05ef3_640.png" class="img-fluid" alt="">
+                <div class="col-lg-6">
+                    <h3>Web3 is the future of the internet, where decentralization meets innovation, creating a
+                        beautiful and exciting<span> new world</span></h3>
+                    <p class="mt-4 mb-2">Digital Revolutions happen rarely and are marked by historic days and
+                        moments. On 29 June 2007 the iPhone was presented, marking the birth of a new digital
+                        revolution and witnessing the beginning of a new industry. Computers moved literally from
+                        our desks to our pockets and a brand new industry for mobile applications took flight. </p>
+                    <p class="mt-4 mb-2">Companies like Google (Alphabet) or Facebook (Meta) grew exponentially,
+                        reached stratospheric market capitalizations, and produced astronomical revenues year after
+                        year. Today, 5 billion people use the Internet, a number that continues to grow.
+                    </p>
+                    <p class="mt-4 mb-2">The Internet is massive and it’s pervasive and now we are witnessing the
+                        birth of a new digital revolution. The Bitcoin White Paper was published on Oct 21, 2008 and
+                        that lone idea and blockchain network have given birth to over 1,000 blockchain networks.
+                        Amongst all these networks, Bitcoin and Etheruem represent more than 60% of the new industry
+                        known as web3.</p>
+                    <p class="mt-4 mb-2">Web3 is the next iteration of the Internet that 5 billion users across the
+                        world are using daily for many kinds of activities, such as ordering groceries, booking a
+                        vacation, playing online games, listening to music, or accessing their finances. </p>
+                    <p class="mt-4 mb-2">Web3 is a new digital revolution that is powered at its core by blockchain
+                        technologies like Bitcoin and Ethereum. Today, more than 350 thousand developers are
+                        building this new generation of Internet and Nemax Tech is here to build the Internet of
+                        tomorrow!</p>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="about pt-5 pb-5  wow  animate__fadeInUp" data-wow-duration="2s" id="about"">
-        <div class=" container">
-        <div class="title">
-            <i class="fa-solid fa-people-group"></i> About
-        </div>
-        <div class="row">
-            <div class="col-lg-10">
-                <h1>Web3 is the future of the internet, where decentralization meets innovation, creating a
-                    beautiful and exciting<span> new world</span></h1>
-                <p class="mt-4 mb-2">Digital Revolutions happen rarely and are marked by historic days and
-                    moments. On 29 June 2007 the iPhone was presented, marking the birth of a new digital
-                    revolution and witnessing the beginning of a new industry. Computers moved literally from
-                    our desks to our pockets and a brand new industry for mobile applications took flight. </p>
-                <p class="mt-4 mb-2">Companies like Google (Alphabet) or Facebook (Meta) grew exponentially,
-                    reached stratospheric market capitalizations, and produced astronomical revenues year after
-                    year. Today, 5 billion people use the Internet, a number that continues to grow.
-                </p>
-                <p class="mt-4 mb-2">The Internet is massive and it’s pervasive and now we are witnessing the
-                    birth of a new digital revolution. The Bitcoin White Paper was published on Oct 21, 2008 and
-                    that lone idea and blockchain network have given birth to over 1,000 blockchain networks.
-                    Amongst all these networks, Bitcoin and Etheruem represent more than 60% of the new industry
-                    known as web3.</p>
-                <p class="mt-4 mb-2">Web3 is the next iteration of the Internet that 5 billion users across the
-                    world are using daily for many kinds of activities, such as ordering groceries, booking a
-                    vacation, playing online games, listening to music, or accessing their finances. </p>
-                <p class="mt-4 mb-2">Web3 is a new digital revolution that is powered at its core by blockchain
-                    technologies like Bitcoin and Ethereum. Today, more than 350 thousand developers are
-                    building this new generation of Internet and Nemax Tech is here to build the Internet of
-                    tomorrow!</p>
-            </div>
-        </div>
-    </div>
-    </div>
+    <!-- End Header -->
 
-    <div class="services pt-5 pb-5">
+    <!-- Start Header -->
+    <div class="services pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s">
         <div class="container">
             <div class="title">
                 <i class="fa-solid fa-server me-1"></i> SERVICES
             </div>
-            <h1>What do <span> we offer?</span></h1>
-            <div class="box mt-5 mb-5">
+            <h3>We specialize in providing cutting-edge services in the exciting realm of web3 technology. Our expertise
+                spans a range of areas, including building web3 communities, web3 marketing and NFT strategies, and
+                running validator nodes.
+            </h3>
+            <div class="box mt-5 mb-5 wow animate__fadeInUp" data-wow-duration="2s">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="text mb-2">
@@ -132,15 +148,14 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img src="./images/Vector_2646.jpg" class="img-fluid" alt="">
+                        <img src="./images/service1.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
-            <div class="box mt-5 mb-5">
+            <div class="box mt-5 mb-5 wow animate__fadeInUp" data-wow-duration="2s">
                 <div class="row">
                     <div class="col-lg-6 bigScreenImage">
-                        <img src="./images/Metaverse-technology-future-concept-e1658140818682.jpg" class="img-fluid"
-                            alt="">
+                        <img src="./images/service2.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="col-lg-6">
                         <div class="text mb-2">
@@ -158,12 +173,11 @@
                         </div>
                     </div>
                     <div class="col-lg-6 smallScreenImage">
-                        <img src="./images/Metaverse-technology-future-concept-e1658140818682.jpg" class="img-fluid"
-                            alt="">
+                        <img src="./images/service2.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
-            <div class="box mt-5 mb-5">
+            <div class="box mt-5 mb-5 wow animate__fadeInUp" data-wow-duration="2s">
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="text mb-2">
@@ -180,12 +194,14 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <img src="./images/1_sQ14XX2rbHJ4tSsXKECvOA.png" class="img-fluid" alt="">
+                        <img src="./images/service3.png" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <!-- End Header -->
 
     <div class="team pt-5 pb-5">
         <div class="container">
@@ -332,7 +348,7 @@
         </div>
     </div>
 
-        
+    <!-- Start Footer -->
     <footer class="pt-5 pb-5">
         <div class="container">
             <h3 class="text-center">Company Name</h3>
@@ -360,8 +376,64 @@
             </div>
         </div>
     </footer>
+    <!-- End Footer -->
+    </div>
+
+
+
+
+    <!-- Start Menu -->
+    <button class="btnMenu" id="btnMenu"><i class="fa-solid fa-bars-staggered"></i></button>
+    <div class="menuButton hide" id="menuButton">
+        <div class="container">
+            <div class="headerMenu d-flex justify-content-between align-items-center mt-3 ms-2 pe-2">
+                <h5>Menu</h5>
+                <button class="btnclose" id="btnclose"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="bodyMenu mt-5">
+                <div>
+                    <ul class="ul-1">
+                        <li><a href="../index.html" class="mt-4 active"><i class="fa-solid fa-house me-1"></i> HOME</a>
+                        </li>
+                        <li><a href="./about.html" class="mb-4 mt-4 "><i class="fa-solid fa-user me-1"></i> ABOUT</a>
+                        </li>
+                        <li><a href="./services.html" class="mb-4 mt-4"><i class="fa-solid fa-server me-1"></i>
+                                SERVICES</a>
+                        </li>
+                        <li><a href="./portfolio.html" class="mb-4 mt-4"><i class="fa-solid fa-table-cells me-1"></i>
+                                PORTFOLIO</a></li>
+                        <li><a href="./team.html" class="mb-4 mt-4 "><i class="fa-solid fa-people-group me-1"></i>
+                                TEAM</a></li>
+
+                        <li><a href="./contact.html"><i class="fa-solid fa-envelope me-1"></i> CONTACT</a></li>
+                    </ul>
+                    <div class="footer mt-5">
+                        <p>Social</p>
+                        <div class="icons d-flex">
+                            <div class="icon me-4">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </div>
+                            <div class="icon me-4">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-brands fa-github">
+                                    </i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Menu -->
+    <!-- Button Scroll -->
+    <button class="buttonScroll" id="buttonScroll"><i class="fa-solid fa-chevron-up"></i></button>
+    <!-- Button Scroll -->
 
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/wow.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

@@ -6,9 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web 3</title>
+    <!-- File Css Bootstrap -->
     <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- File Main Css -->
     <link rel="stylesheet" href="../css/style.css">
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/49f02d4a75.js" crossorigin="anonymous"></script>
+    <!-- File Animation Css -->
+    <link rel="stylesheet" href="../css/animate.min.css">
 
 </head>
 
@@ -18,231 +23,294 @@
             <source src="../video/video.mp4" type="video/mp4" />
         </video>
     </div>
-
-    <header>
-        <nav class="navbar navbar-expand-lg">
+    <div class="body" id="body">
+            <!-- Start Header -->
+        <header>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand ms-2" href="#">Logo</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars icon"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mt-auto mb-auto">
+                            <li class="nav-item">
+                                <a class="nav-link " href="../index.html">HOME</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./about.html">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="./services.html">SERVICES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./team.html">TEAM</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- End Header -->
+        <!-- Start About -->
+        <div class="teamPage pt-5 pb-5">
             <div class="container">
-                <a class="navbar-brand ms-2" href="#">Logo</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fa-solid fa-bars icon"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mt-auto mb-auto">
-                        <li class="nav-item">
-                            <a class="nav-link " href="../index.html">HOME</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./about.html">ABOUT</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="./services.html">SERVICES</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="./team.html">TEAM</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact.html">CONTACT</a>
-                        </li>
-                    </ul>
+                <div class="title">
+                    <i class="fa-solid fa-people-group me-1"></i> TEAM
+                </div>
+                <h3 class="wow animate__fadeInUp" data-wow-duration="2s">Each member of our core team plays a crucial
+                    role
+                    in driving our company's success, contributing with
+                    their unique expertise and skills. Together, they form a cohesive and dynamic team that is dedicated
+                    to
+                    delivering excellence in all aspects of our business.</h3>
+                <div class="box mt-5 ps-4 pe-4 wow animate__fadeInUp" data-wow-duration="2s">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mt-3 mb-3">
+                            <div class="text">
+                                <h1>Paolo Diomede</h1>
+                                <span>CEO & CTO</span>
+                                <p>Paolo is our CEO, is a visionary leader with a passion for driving growth and
+                                    innovation.
+                                    With 20+ years of experience in Tech, he has a proven track record of successfully
+                                    steering companies towards success. His strategic mindset and ability to identify
+                                    emerging trends have been instrumental in guiding our organization to new heights.
+                                    Under
+                                    his guidance, our company has flourished, expanding its reach and established itself
+                                    as
+                                    a market leader.</p>
+                                <div class="icons d-flex">
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mt-3 mb-3">
+                            <div class="image">
+                                <img src="../images/team/team-1.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box mt-5 ps-4 pe-4 wow animate__fadeInUp" data-wow-duration="2s">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mt-3 mb-3">
+                            <div class="text">
+                                <h1>Margarita Drik</h1>
+                                <span>CFO</span>
+                                <p>At the helm of our financial strategy is Margarita, our CFO. With a strong financial
+                                    background and extensive experience in Finance and Corporate Banking, she possesses
+                                    a
+                                    keen eye for detail and a strategic approach to financial management. Her ability to
+                                    analyze complex financial data, forecast trends, and mitigate risks has been
+                                    instrumental in driving our company's financial growth. Her expertise ensures that
+                                    our
+                                    financial decisions are sound, enabling us to make informed choices for the benefit
+                                    of
+                                    our organization and stakeholders.</p>
+                                <div class="icons d-flex">
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mt-3 mb-3">
+                            <div class="image">
+                                <img src="../images/team/team-4.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box mt-5 ps-4 pe-4 wow animate__fadeInUp" data-wow-duration="2s">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mt-3 mb-3">
+                            <div class="text">
+                                <h1>Lidia Plamenova</h1>
+                                <span>COO</span>
+                                <p>As our COO, Lidiia brings a wealth of operational expertise to the table. With a
+                                    solid
+                                    background in Tech, she has a deep understanding of the intricacies involved in
+                                    scaling
+                                    and optimizing business operations. Her exceptional leadership skills and commitment
+                                    to
+                                    efficiency have played a pivotal role in streamlining our processes and maximizing
+                                    productivity. With her guidance, our company is poised for continued operational
+                                    excellence.</p>
+                                <div class="icons d-flex">
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mt-3 mb-3">
+                            <div class="image">
+                                <img src="../images/team/team-3.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box mt-5 ps-4 pe-4 wow animate__fadeInUp" data-wow-duration="2s">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 mt-3 mb-3">
+                            <div class="text">
+                                <h1>Danila Natale</h1>
+                                <span>Brand Identity Designer</span>
+                                <p>Meet our talented brand identity designer, Danila. With a passion for creativity and
+                                    an
+                                    innate understanding of branding principles, she brings our brands to life through
+                                    her
+                                    exceptional design skills. From crafting captivating logos to developing visually
+                                    appealing brand guidelines, her work resonates with our target audience and helps us
+                                    establish a strong brand presence. Her attention to detail and ability to create
+                                    visually stunning designs make her an invaluable asset to our team.</p>
+                                <div class="icons d-flex">
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                    </div>
+                                    <div class="icon">
+                                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 mt-3 mb-3">
+                            <div class="image">
+                                <img src="../images/team/team-2.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+        <!-- End About -->
+        <!-- Start Footer -->
+        <footer class="pt-5 pb-5">
+            <div class="container">
+                <h3 class="text-center">Company Name</h3>
+                <ul class="d-flex justify-content-center align-items-center">
+                    <li><a href="../index.html">HOME</a></li>
+                    <li><a href="./about.html">ABOUT</a></li>
+                    <li><a href="./services.html">SERVICES</a></li>
+                    <li><a href="./portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="./team.html">TEAM</a></li>
+                    <li><a href="./contact.html">CONTACT</a></li>
+                </ul>
+                <div class="icons d-flex justify-content-center align-items-center">
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <div class="icon">
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+    </div>
 
-
-    <div class="teamPage pt-5 pb-5">
+    <!-- Start Menu -->
+    <button class="btnMenu" id="btnMenu"><i class="fa-solid fa-bars-staggered"></i></button>
+    <div class="menuButton hide" id="menuButton">
         <div class="container">
-            <div class="title">
-                <i class="fa-solid fa-people-group me-1"></i> TEAM
+            <div class="headerMenu d-flex justify-content-between align-items-center mt-3 ms-2 pe-2">
+                <h5>Menu</h5>
+                <button class="btnclose" id="btnclose"><i class="fa-solid fa-x"></i></button>
             </div>
-            <h3>Each member of our core team plays a crucial role in driving our company's success, contributing with
-                their unique expertise and skills. Together, they form a cohesive and dynamic team that is dedicated to
-                delivering excellence in all aspects of our business.</h3>
-            <div class="box mt-5 ps-4 pe-4">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                        <div class="text">
-                            <h1>Paolo Diomede</h1>
-                            <span>CEO & CTO</span>
-                            <p>Paolo is our CEO, is a visionary leader with a passion for driving growth and innovation.
-                                With 20+ years of experience in Tech, he has a proven track record of successfully
-                                steering companies towards success. His strategic mindset and ability to identify
-                                emerging trends have been instrumental in guiding our organization to new heights. Under
-                                his guidance, our company has flourished, expanding its reach and established itself as
-                                a market leader.</p>
-                            <div class="icons d-flex">
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                </div>
+            <div class="bodyMenu mt-5">
+                <div>
+                    <ul class="ul-1">
+                        <li><a href="../index.html" class="mt-4"><i class="fa-solid fa-house me-1"></i> HOME</a>
+                        </li>
+                        <li><a href="./about.html" class="mb-4 mt-4"><i class="fa-solid fa-user me-1"></i> ABOUT</a>
+                        </li>
+                        <li><a href="./services.html" class="mb-4 mt-4"><i class="fa-solid fa-server me-1"></i>
+                                SERVICES</a>
+                        </li>
+                        <li><a href="./portfolio.html" class="mb-4 mt-4"><i class="fa-solid fa-table-cells me-1"></i>
+                                PORTFOLIO</a></li>
+                        <li><a href="./team.html" class="mb-4 mt-4 active"><i class="fa-solid fa-people-group me-1"></i>
+                                TEAM</a></li>
+
+                        <li><a href="./contact.html"><i class="fa-solid fa-envelope me-1"></i> CONTACT</a></li>
+                    </ul>
+                    <div class="footer mt-5">
+                        <p>Social</p>
+                        <div class="icons d-flex">
+                            <div class="icon me-4">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                        <div class="image">
-                            <img src="../images/team/team-1.jpg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box mt-5 ps-4 pe-4">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                        <div class="text">
-                            <h1>Margarita Drik</h1>
-                            <span>CFO</span>
-                            <p>At the helm of our financial strategy is Margarita, our CFO. With a strong financial
-                                background and extensive experience in Finance and Corporate Banking, she possesses a
-                                keen eye for detail and a strategic approach to financial management. Her ability to
-                                analyze complex financial data, forecast trends, and mitigate risks has been
-                                instrumental in driving our company's financial growth. Her expertise ensures that our
-                                financial decisions are sound, enabling us to make informed choices for the benefit of
-                                our organization and stakeholders.</p>
-                            <div class="icons d-flex">
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                </div>
+                            <div class="icon me-4">
+                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                        <div class="image">
-                            <img src="../images/team/team-4.jpg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box mt-5 ps-4 pe-4">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                        <div class="text">
-                            <h1>Lidia Plamenova</h1>
-                            <span>COO</span>
-                            <p>As our COO, Lidiia brings a wealth of operational expertise to the table. With a solid
-                                background in Tech, she has a deep understanding of the intricacies involved in scaling
-                                and optimizing business operations. Her exceptional leadership skills and commitment to
-                                efficiency have played a pivotal role in streamlining our processes and maximizing
-                                productivity. With her guidance, our company is poised for continued operational
-                                excellence.</p>
-                            <div class="icons d-flex">
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                </div>
+                            <div class="icon">
+                                <a href="#"><i class="fa-brands fa-github">
+                                    </i></a>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                        <div class="image">
-                            <img src="../images/team/team-3.jpg" class="img-fluid" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box mt-5 ps-4 pe-4">
-                <div class="row">
-                    <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                        <div class="text">
-                            <h1>Danila Natale</h1>
-                            <span>Brand Identity Designer</span>
-                            <p>Meet our talented brand identity designer, Danila. With a passion for creativity and an
-                                innate understanding of branding principles, she brings our brands to life through her
-                                exceptional design skills. From crafting captivating logos to developing visually
-                                appealing brand guidelines, her work resonates with our target audience and helps us
-                                establish a strong brand presence. Her attention to detail and ability to create
-                                visually stunning designs make her an invaluable asset to our team.</p>
-                            <div class="icons d-flex">
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-12 mt-3 mb-3">
-                        <div class="image">
-                            <img src="../images/team/team-2.jpg" class="img-fluid" alt="">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- End Menu -->
 
-
-
-
-    <footer class="pt-5 pb-5">
-        <div class="container">
-            <h3 class="text-center">Company Name</h3>
-            <ul class="d-flex justify-content-center align-items-center">
-                <li><a href="../index.html">HOME</a></li>
-                <li><a href="./about.html">ABOUT</a></li>
-                <li><a href="./services.html">SERVICES</a></li>
-                <li><a href="./portfolio.html">PORTFOLIO</a></li>
-                <li><a href="./team.html">TEAM</a></li>
-                <li><a href="./contact.html">CONTACT</a></li>
-            </ul>
-            <div class="icons d-flex justify-content-center align-items-center">
-                <div class="icon">
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                </div>
-                <div class="icon">
-                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                </div>
-                <div class="icon">
-                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                </div>
-                <div class="icon">
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-
-
+    <!-- Button Scroll -->
+    <button class="buttonScroll" id="buttonScroll"><i class="fa-solid fa-chevron-up"></i></button>
+    <!-- Button Scroll -->
 
     <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="../js/wow.min.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>

@@ -31,6 +31,11 @@ body * {
   z-index: 2;
 }
 
+.body.hide {
+  opacity:0.4;
+  z-index:10;
+}
+
 .title {
   border: 1px solid #565656;
   width: fit-content;
@@ -39,6 +44,20 @@ body * {
   border-radius: 25px;
   text-align: center;
   margin: 20px 0;
+}
+
+.buttonScroll {
+  position: fixed;
+  right: 30px;
+  bottom: 5%;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+  color: var(--primary-color);
+  width: 45px;
+  height: 30px;
+  opacity:0;
+  transition:0.5s;
 }
 
 /* Start Background */
@@ -103,10 +122,7 @@ nav button.navbar-toggler:focus {
   background-color: transparent;
 }
 
-.home img {
-  animation: rotate 8s linear infinite;
-  transform-origin: center center;
-}
+
 .home h3 {
   line-height: 1.5;
 }
@@ -114,18 +130,12 @@ nav button.navbar-toggler:focus {
   color: var(--primary-color);
 }
 
-/* @keyframes rotate {
-    0% {
-        transform: rotateY(0deg);
-    }
-    50% {
-        transform: rotateY(360deg);
-    }
-    100%{
-        transform: rotateY(0deg);
-    }
+.home p {
+  color: var(--second-color);
+    margin: 15px 0;
+}
 
-} */
+
 
 /* Start About */
 .about h1 span {
@@ -409,3 +419,93 @@ footer .icons a:hover {
 }
 /* End contactPage */
 
+
+
+.btnMenu {
+  background-color: black;
+  color: white;
+  border: 1px solid #565656;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  z-index: 100;
+  opacity: 0;
+  transition:0.5s;
+}
+
+.menuButton {
+  background-color: #191919;
+  transition: 0.5s;
+}
+
+.menuButton.hide {
+  transform: translateX(100%);
+}
+
+.headerMenu h5 {
+  color: #999999;
+}
+
+.headerMenu .btnclose {
+  color: white !important;
+  background-color: transparent;
+  border: none;
+}
+
+.menuButton {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: black;
+  z-index: 20000;
+  width: 300px;
+  height: 100vh;
+}
+
+.bodyMenu {
+  display: flex;
+  justify-content: center;
+}
+
+.menuButton .container a {
+  text-decoration: none;
+  color: #999999;
+  display: block;
+  font-size: 13px;
+  transition: 0.5s;
+}
+
+.menuButton .container a i {
+  color: #999999;
+  transition: 0.5s;
+}
+
+.menuButton .container a.active {
+  color: white;
+}
+
+.menuButton .container a.active i {
+  color: var(--primary-color);
+}
+
+.menuButton .container a:hover {
+  color: white;
+  letter-spacing: 1.4px;
+}
+
+.menuButton .container a:hover i {
+  color: var(--primary-color);
+}
+
+.menuButton .container p {
+  color: #999999;
+}
+
+.menuButton .container .icon a {
+  font-size: 15px;
+  color: #999999;
+}
