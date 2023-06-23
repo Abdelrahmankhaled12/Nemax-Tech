@@ -6,6 +6,7 @@ let background = document.getElementById("background");
 background.style.display = "none";
 body.style.display = "none";
 
+
 // After 4 sec from start 
 
 
