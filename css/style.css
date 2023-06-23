@@ -148,7 +148,7 @@ nav button.navbar-toggler:focus {
 }
 
 .about img {
-    max-height: 400px;
+    max-height: 350px;
     width: 100%;
     border-radius:10px;
 }
