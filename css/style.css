@@ -50,7 +50,7 @@ body * {
   position: fixed;
   right: 30px;
   bottom: 5%;
-  background-color: transparent;
+  background-color: white;
   border: 1px solid var(--primary-color);
   border-radius: 10px;
   color: var(--primary-color);
