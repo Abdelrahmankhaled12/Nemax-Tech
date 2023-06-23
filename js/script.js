@@ -10,6 +10,7 @@ let buttonScroll = document.getElementById("buttonScroll");
 
 
 
+
 btnMenu.addEventListener("click", () => {
     menuButton.classList.remove("hide")
     body.classList.add("hide")
@@ -37,5 +38,7 @@ window.onscroll = function () {
     } else {
         btnMenu.style.opacity = "0";
     }
-
 }
+
+
+
