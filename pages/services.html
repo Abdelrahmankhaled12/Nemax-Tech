@@ -18,55 +18,64 @@
 </head>
 
 <body>
-    <div class="background">
-        <video loop autoplay muted id="video">
-            <source src="../video/video.mp4" type="video/mp4" />
-        </video>
-    </div>
     <div class="body" id="body">
         <!-- Start Header -->
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand ms-2" href="#">Logo</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars icon"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mt-auto mb-auto">
-                            <li class="nav-item">
-                                <a class="nav-link " href="../index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./about.html">ABOUT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./services.html">SERVICES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./team.html">TEAM</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">CONTACT</a>
-                            </li>
-                        </ul>
+        <nav class="navbar navbar-expand-lg position-sticky">
+            <div class="container">
+                <a class="navbar-brand ms-2" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mt-auto mb-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./team.html">TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Header -->
+        <!-- start land -->
+        <div class="land pt-5 pb-5 justify-content-center d-flex align-items-center">
+            <div class="container position-relative justify-content-center d-flex align-items-center wow  animate__fadeInUp"
+                data-wow-duration="2s">
+                <div class="text">
+                    <h1>Services</h1>
+                    <div aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">Services</li>
+                        </ol>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <!-- End Header -->
+            </div>
+        </div>
+        <!-- end land -->
         <!-- Start Services -->
-        <div class="services pt-5 pb-5">
+        <div class="services pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s">
             <div class="container">
                 <div class="title">
                     <i class="fa-solid fa-server me-1"></i> SERVICES
                 </div>
-                <h1 class="wow animate__fadeInUp" data-wow-duration="2s">What do <span> we offer?</span></h1>
+                <h4 class="text-center">We specialize in providing cutting-edge services in the exciting realm of web3 technology. Our expertise spans a range of areas, including building web3 communities, web3 marketing and NFT strategies, and running validator nodes.</h4>
                 <div class="box mt-5 mb-5 wow animate__fadeInUp" data-wow-duration="2s">
                     <div class="row">
                         <div class="col-lg-6">
@@ -178,52 +187,6 @@
         </footer>
         <!-- End Footer -->
     </div>
-
-    <!-- Start Menu -->
-    <button class="btnMenu" id="btnMenu"><i class="fa-solid fa-bars-staggered"></i></button>    
-    <div class="menuButton hide" id="menuButton">
-        <div class="container">
-            <div class="headerMenu d-flex justify-content-between align-items-center mt-3 ms-2 pe-2">
-                <h5>Menu</h5>
-                <button class="btnclose" id="btnclose"><i class="fa-solid fa-x"></i></button>
-            </div>
-            <div class="bodyMenu mt-5">
-                <div>
-                    <ul class="ul-1">
-                        <li><a href="../index.html" class="mt-4"><i class="fa-solid fa-house me-1"></i> HOME</a>
-                        </li>
-                        <li><a href="./about.html" class="mb-4 mt-4"><i class="fa-solid fa-user me-1"></i> ABOUT</a>
-                        </li>
-                        <li><a href="./services.html" class="mb-4 mt-4 active"><i class="fa-solid fa-server me-1"></i>
-                                SERVICES</a>
-                        </li>
-                        <li><a href="./portfolio.html" class="mb-4 mt-4"><i class="fa-solid fa-table-cells me-1"></i>
-                                PORTFOLIO</a></li>
-                        <li><a href="./team.html" class="mb-4 mt-4 "><i class="fa-solid fa-people-group me-1"></i>
-                                TEAM</a></li>
-
-                        <li><a href="./contact.html"><i class="fa-solid fa-envelope me-1"></i> CONTACT</a></li>
-                    </ul>
-                    <div class="footer mt-5">
-                        <p>Social</p>
-                        <div class="icons d-flex">
-                            <div class="icon me-4">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            </div>
-                            <div class="icon me-4">
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="icon">
-                                <a href="#"><i class="fa-brands fa-github">
-                                    </i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Menu -->
     <!-- Button Scroll -->
     <button class="buttonScroll" id="buttonScroll"><i class="fa-solid fa-chevron-up"></i></button>
     <!-- Button Scroll -->
