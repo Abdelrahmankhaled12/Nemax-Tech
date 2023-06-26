@@ -1,9 +1,9 @@
 new WOW().init();
 
 
-let btnMenu = document.getElementById("btnMenu");
-let menuButton = document.getElementById("menuButton");
-let btnclose = document.getElementById("btnclose");
+// let btnMenu = document.getElementById("btnMenu");
+// let menuButton = document.getElementById("menuButton");
+// let btnclose = document.getElementById("btnclose");
 let body = document.getElementById("body");
 let buttonScroll = document.getElementById("buttonScroll");
 
@@ -11,15 +11,15 @@ let buttonScroll = document.getElementById("buttonScroll");
 
 
 
-btnMenu.addEventListener("click", () => {
-    menuButton.classList.remove("hide")
-    body.classList.add("hide")
-})
+// btnMenu.addEventListener("click", () => {
+//     menuButton.classList.remove("hide")
+//     body.classList.add("hide")
+// })
 
-btnclose.addEventListener("click", () => {
-    menuButton.classList.add("hide");
-    body.classList.remove("hide")
-})
+// btnclose.addEventListener("click", () => {
+//     menuButton.classList.add("hide");
+//     body.classList.remove("hide")
+// })
 
 
 window.onscroll = function () {
@@ -33,11 +33,11 @@ window.onscroll = function () {
         window.scrollTo({ top: 0, behavior: "smooth" });
     };
 
-    if (window.scrollY >= 100) {
-        btnMenu.style.opacity = "1";
-    } else {
-        btnMenu.style.opacity = "0";
-    }
+    // if (window.scrollY >= 100) {
+    //     btnMenu.style.opacity = "1";
+    // } else {
+    //     btnMenu.style.opacity = "0";
+    // }
 }
 
 

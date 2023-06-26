@@ -1,11 +1,11 @@
 /* font Google */
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
 /* font Google */
 
 :root {
-  --primary-color: #28e98c;
+  --primary-color: #5390d9;
   --black-color: #565656;
-  --second-color: #999;
+  --second-color: #5c677d;
 }
 
 ::-webkit-scrollbar {
@@ -18,12 +18,12 @@
 
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
   position: relative;
   min-height: 100vh;
   padding: 0;
-  color: white;
-  background: #000;
+  color: #000000;
+  background: #FFFFFF;
   line-height: 1.7;
 }
 
@@ -32,18 +32,20 @@ body * {
 }
 
 .body.hide {
-  opacity:0.4;
-  z-index:10;
+  opacity: 0.4;
+  z-index: 10;
 }
 
 .title {
-  border: 1px solid #565656;
+  border: 1px solid var(--primary-color);
   width: fit-content;
   padding: 6px 25px;
-  font-size: 12px;
+  font-size: 25px;
   border-radius: 25px;
   text-align: center;
-  margin: 20px 0;
+  margin: 25px auto;
+  color:var(--primary-color);
+
 }
 
 .buttonScroll {
@@ -56,13 +58,12 @@ body * {
   color: var(--primary-color);
   width: 45px;
   height: 30px;
-  opacity:0;
-  transition:0.5s;
+  opacity: 0;
+  transition: 0.5s;
 }
 
-
 /* Start Background */
-.background video {
+/* .background video {
   position: fixed;
   left: 0;
   top: 0;
@@ -71,12 +72,14 @@ body * {
   object-fit: cover;
   z-index: -1;
   opacity: 0.3;
-}
+} */
 /* End Background */
 /* start Navbar */
-nav .container {
-  border: 1px solid var(--black-color);
-  border-radius: 25px;
+nav {
+  top: 0;
+  z-index: 105000;
+  background-color: #fff;
+  box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
 }
 
 nav li a.active {
@@ -108,6 +111,26 @@ nav button.navbar-toggler:focus {
 
 /* End Navbar */
 /* Start Home */
+
+.landing {
+  position: relative;
+  background-image: url(../images/home.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 95vh;
+}
+
+.landing::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.481);
+  top: 0;
+  position: absolute;
+  left: 0;
+}
+
 .home button {
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
@@ -120,26 +143,28 @@ nav button.navbar-toggler:focus {
 
 .home button:hover {
   color: var(--primary-color);
-  background-color: transparent;
+  background-color: white;
 }
-
 
 .home h3 {
   line-height: 1.5;
+  color:white;
 }
 .home h3 span {
   color: var(--primary-color);
 }
 
 .home p {
-  color: var(--second-color);
-    margin: 15px 0;
+  color: #ffffff99;
+  margin: 15px 0;
 }
 
-
-
 /* Start About */
-.about h1 span {
+.about h4 {
+  border-left: 3px solid var(--primary-color);
+  padding-left: 10px;
+}
+.about h4 span {
   color: var(--primary-color);
 }
 
@@ -149,9 +174,9 @@ nav button.navbar-toggler:focus {
 }
 
 .about img {
-    max-height: 350px;
-    width: 100%;
-    border-radius:10px;
+  max-height: 350px;
+  width: 100%;
+  border-radius: 10px;
 }
 /* End About */
 /* start Services */
@@ -188,16 +213,19 @@ nav button.navbar-toggler:focus {
 }
 
 .team .card {
-  background-color: transparent;
+  /* background-color: transparent; */
+  border-radius:10px;
 }
 
 .team .card img {
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
   height: 400px;
 }
 
-.team .card h3 {
+.team .card h4 {
   margin-bottom: 0;
+  color:var(--primary-color);
 }
 .team .card p {
   color: var(--second-color);
@@ -236,104 +264,106 @@ nav button.navbar-toggler:focus {
 
 /* Start Contact */
 .contact h1 span {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 .contact label {
-    color: #999999;
+  color: #999999;
 }
 
 .contact input {
-    background-color: transparent;
-    outline: none;
-    border: 1px solid #565656;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #565656;
 }
 
 .contact textarea {
-    background-color: transparent;
-    outline: none;
-    border: 1px solid #565656;
-    height: 200px !important;
+  background-color: transparent;
+  outline: none;
+  border: 1px solid #565656;
+  height: 200px !important;
 }
 
 .form-control:focus {
-    color: #999999;
-    background-color: transparent;
-    border-color: #565656;
-    outline: 0;
-    box-shadow: none;
+  color: #999999;
+  background-color: transparent;
+  border-color: #565656;
+  outline: 0;
+  box-shadow: none;
 }
 
 .contact .buttonStyle {
-    color: white;
-    background-color: var(--primary-color);
-    padding: 10px 40px;
-    border-radius: 30px;
-    border: 1px solid var(--primary-color);
-    display: block;
-    text-align: center;
-    transition: 0.5s;
+  color: white;
+  background-color: var(--primary-color);
+  padding: 10px 40px;
+  border-radius: 30px;
+  border: 1px solid var(--primary-color);
+  display: block;
+  text-align: center;
+  transition: 0.5s;
 }
 
 .contact .buttonStyle:hover {
-    color: var(--primary-color);
-    background-color: transparent;
+  color: var(--primary-color);
+  background-color: transparent;
 }
 /* End Contact */
 /* Start Footer */
 footer {
-    background-color: #00000099;
+  background-color: black;
 }
 
-ul  {
-    list-style:none;
-    padding:0;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-@media(max-width:776px) {
-    ul {
-        flex-direction: column;
-    }
+@media (max-width: 776px) {
+  ul {
+    flex-direction: column;
+  }
 }
-
+footer h3 {
+  color:var(--primary-color);
+}
 footer ul li a {
-    color: var(--second-color);
-    text-decoration: none;
-    transition:0.5s;
-    display: block;
-    margin-left: 10px;
-    margin-right:10px;
-    margin-bottom:5px;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
 }
 
 ul li a:hover {
-    color: var(--primary-color);
+  color: var(--primary-color);
 }
 
 footer .icons a {
-    border:1px solid var(--primary-color);
-    width:35px;
-    height:35px;
-    display:block;
-    background-color:var(--primary-color);
-    color:white;
-    position:relative;
-    border-radius:50%;
-    margin:0 5px;
-    transition:0.5s;
+  border: 1px solid var(--primary-color);
+  width: 35px;
+  height: 35px;
+  display: block;
+  background-color: var(--primary-color);
+  color: white;
+  position: relative;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: 0.5s;
 }
 
 footer .icons a i {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    font-size: 18px;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
 }
 
 footer .icons a:hover {
-    background-color:transparent;
-    color:var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
 }
 
 /* End Footer */
@@ -353,74 +383,72 @@ footer .icons a:hover {
 }
 
 .teamPage .image img {
-    height: 350px;
-    border-radius: 10px;
-    width: 350px;
-    margin:  0 0 0 auto;
-    display: block;
+  height: 350px;
+  border-radius: 10px;
+  width: 350px;
+  margin: 0 0 0 auto;
+  display: block;
 }
 
-@media(max-width:992px) {
-    .teamPage .image img {
-        margin: auto;
-    }
+@media (max-width: 992px) {
+  .teamPage .image img {
+    margin: auto;
+  }
 }
 
 .teamPage .icon a {
-    color: white;
-    background-color: var(--primary-color);
-    border:1px solid var(--primary-color);
-    display: block;
-    width: 35px;
-    height: 35px;
-    position: relative;
-    border-radius: 50%;
-    margin: 8px 5px;
-    transition: 0.5s;
-  }
-  
-  .teamPage .icon a:hover {
-    background-color: transparent;
-    color: var(--primary-color);
-  }
-  
-  .teamPage .icon a i {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    font-size: 18px;
-    transform: translate(-50%, -50%);
-  }
+  color: white;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  display: block;
+  width: 35px;
+  height: 35px;
+  position: relative;
+  border-radius: 50%;
+  margin: 8px 5px;
+  transition: 0.5s;
+}
+
+.teamPage .icon a:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.teamPage .icon a i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 18px;
+  transform: translate(-50%, -50%);
+}
 /* End TeamPage */
 /* Start contactPage */
 .contactPage h4 span {
-    color:var(--primary-color);
+  color: var(--primary-color);
 }
 .contactPage .parTitle {
-    color:var(--second-color);
-    margin:15px 0;
+  color: var(--second-color);
+  margin: 15px 0;
 }
 
 .contactPage .icon i {
-    font-size: 20px;
-    color: var(--primary-color);
-    margin-right: 8px;
+  font-size: 20px;
+  color: var(--primary-color);
+  margin-right: 8px;
 }
 
 .contactPage .icon p {
-    margin:0;
-    color:var(--second-color);
-    font-size:20px;
-    cursor: pointer;
-    transition:0.5s;
-}   
+  margin: 0;
+  color: var(--second-color);
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
 
 .contactPage .icon p:hover {
-    letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
 }
 /* End contactPage */
-
-
 
 .btnMenu {
   background-color: black;
@@ -435,7 +463,7 @@ footer .icons a:hover {
   top: 40px;
   z-index: 100;
   opacity: 0;
-  transition:0.5s;
+  transition: 0.5s;
 }
 
 .menuButton {
@@ -511,20 +539,19 @@ footer .icons a:hover {
   color: #999999;
 }
 
-
 .spinner {
   width: 44.8px;
   height: 44.8px;
   animation: spinner-y0fdc1 2s infinite ease;
   transform-style: preserve-3d;
   position: fixed;
-    top: 50%;
-    left: 50%;
-    z-index: 10000000000;
+  top: 50%;
+  left: 50%;
+  z-index: 10000000000;
 }
 
 .spinner > div {
-  background-color: rgba(71,75,255,0.2);
+  background-color: rgba(71, 75, 255, 0.2);
   height: 100%;
   position: absolute;
   width: 100%;
@@ -561,14 +588,76 @@ footer .icons a:hover {
 
 @keyframes spinner-y0fdc1 {
   0% {
-     transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
   }
 
   50% {
-     transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
   }
 
   100% {
-     transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
   }
 }
+
+
+/* start land */
+.land {
+  background-image: url(../images/landingAbout.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  height: 50vh;
+}
+
+.land::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.722);
+  width: 100%;
+  height: 100%;
+}
+
+.land h1 {
+  font-size: 60px;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.land li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.land li.active {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+video {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+
+.goal img {
+  border-radius:15px;
+}
+
+.goal p {
+  color:var(--second-color);
+  position:relative;
+  border-left: 3px solid var(--primary-color);
+  padding-left: 10px;
+}
+

@@ -19,78 +19,83 @@
 
 <body>
     <!-- Start Spinner -->
-    <div class="spinner" id="spinner">
+    <!-- <div class="spinner" id="spinner">
         <div></div>
         <div></div>
         <div></div>
         <div></div>
         <div></div>
         <div></div>
-    </div>
+    </div> -->
     <!-- End Spinner -->
-    <div class="background" id="background">
+    <!-- <div class="background" id="background">
         <video loop autoplay muted id="video">
             <source src="./video/video.mp4" type="video/mp4" />
         </video>
-    </div>
+    </div> -->
     <div class="body" id="body">
-        <!-- Start Header -->
-        <header>
-            <nav class="navbar navbar-expand-lg">
+        <div class="landing">
+            <header>
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container">
+                        <a class="navbar-brand ms-2" href="#">Logo</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars icon"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mb-2 mt-auto mb-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="./index.html">HOME</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/about.html">ABOUT</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/services.html">SERVICES</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/portfolio.html">PORTFOLIO</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/team.html">TEAM</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/contact.html">CONTACT</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <!-- End Header -->
+            <!-- Start Home -->
+            <div class="home pb-5 pt-5  wow animate__fadeInUp" data-wow-duration="2s">
                 <div class="container">
-                    <a class="navbar-brand ms-2" href="#">Logo</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars icon"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mt-auto mb-auto">
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/about.html">ABOUT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/services.html">SERVICES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/portfolio.html">PORTFOLIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/team.html">TEAM</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/contact.html">CONTACT</a>
-                            </li>
-                        </ul>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8 mt-5 text-center">
+                            <h3> We are a specialized company providing cutting-edge services in the exciting realm of
+                                <span> Web3 technology</span>.
+                            </h3>
+                            <p>We pride ourselves on providing quality services in building thriving and engaged Web3
+                                communities, pioneering Web3 marketing and NFT strategies, and providing comprehensive
+                                node
+                                management services for running validation nodes. Our mission is to help you achieve
+                                your
+                                goals and succeed in the Web3 world.</p>
+                            <button class="pt-2 pb-2 ps-4 pe-4">More details</button>
+                        </div>
+                        <!-- <div class="col-lg-12 mt-5">
+                            <img src="./images/about-4.jpg" class="img-fluid" alt="">
+                        </div> -->
                     </div>
-                </div>
-            </nav>
-        </header>
-        <!-- End Header -->
-        <!-- Start Home -->
-        <div class="home pb-5  wow animate__fadeInUp" data-wow-duration="2s" >
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 mt-5 text-center">
-                        <h3> We are a specialized company providing cutting-edge services in the exciting realm of
-                            <span> Web3 technology</span>.
-                        </h3>
-                        <p>We pride ourselves on providing quality services in building thriving and engaged Web3
-                            communities, pioneering Web3 marketing and NFT strategies, and providing comprehensive node
-                            management services for running validation nodes. Our mission is to help you achieve your
-                            goals and succeed in the Web3 world.</p>
-                        <button class="pt-2 pb-2 ps-4 pe-4">More details</button>
-                    </div>
-                    <!-- <div class="col-lg-12 mt-5">
-                        <img src="./images/about-4.jpg" class="img-fluid" alt="">
-                    </div> -->
                 </div>
             </div>
+            <!-- End Home -->
         </div>
-        <!-- End Home -->
+        <!-- Start Header -->
+
         <!-- Start About -->
         <div class="about pt-5 pb-5  wow  animate__fadeInUp" data-wow-duration="2s" id="about">
             <div class=" container">
@@ -142,11 +147,11 @@
                 <div class="title">
                     <i class="fa-solid fa-server me-1"></i> SERVICES
                 </div>
-                <h3>We specialize in providing cutting-edge services in the exciting realm of web3 technology. Our
+                <h4 class="text-center">We specialize in providing cutting-edge services in the exciting realm of web3 technology. Our
                     expertise
                     spans a range of areas, including building web3 communities, web3 marketing and NFT strategies, and
                     running validator nodes.
-                </h3>
+                </h4>
                 <div class="box mt-5 mb-5 wow animate__fadeInUp" data-wow-duration="2s">
                     <div class="row">
                         <div class="col-lg-6">
@@ -234,7 +239,7 @@
                 <div class="title">
                     <i class="fa-solid fa-people-group me-1"></i> TEAM
                 </div>
-                <h1>Our Expert People Ready to <span>Help You</span></h1>
+                <h1 class="text-center">Our Expert People Ready to <span>Help You</span></h1>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="card text-center position-relative">
@@ -254,7 +259,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h3>Paolo Diomede</h3>
+                                <h4>Paolo Diomede</h4>
                                 <p>CEO & CTO</p>
                             </div>
                         </div>
@@ -277,7 +282,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h3>Danila Natale</h3>
+                                <h4>Danila Natale</h4>
                                 <p>Brand Identity Designer</p>
                             </div>
                         </div>
@@ -300,7 +305,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h3>Lidia Plamenova</h3>
+                                <h4>Lidia Plamenova</h4>
                                 <p>COO</p>
                             </div>
                         </div>
@@ -323,7 +328,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h3>Margarita Drik</h3>
+                                <h4>Margarita Drik</h4>
                                 <p>CFO</p>
                             </div>
                         </div>
@@ -338,7 +343,7 @@
                 <div class="title">
                     <i class="fa-solid fa-people-group me-1"></i> CONTACT
                 </div>
-                <h1>Let's Work <span>Together!</span></h1>
+                <h1 class="text-center">Let's Work <span>Together!</span></h1>
                 <form class="mt-4">
                     <div class="row">
                         <div class="col-lg-6 col-md-12">
@@ -418,12 +423,14 @@
                     <ul class="ul-1">
                         <li><a href="./index.html" class="mt-4 active"><i class="fa-solid fa-house me-1"></i> HOME</a>
                         </li>
-                        <li><a href="./pages/about.html" class="mb-4 mt-4 "><i class="fa-solid fa-user me-1"></i> ABOUT</a>
+                        <li><a href="./pages/about.html" class="mb-4 mt-4 "><i class="fa-solid fa-user me-1"></i>
+                                ABOUT</a>
                         </li>
                         <li><a href="./pages/services.html" class="mb-4 mt-4"><i class="fa-solid fa-server me-1"></i>
                                 SERVICES</a>
                         </li>
-                        <li><a href="./pages/portfolio.html" class="mb-4 mt-4"><i class="fa-solid fa-table-cells me-1"></i>
+                        <li><a href="./pages/portfolio.html" class="mb-4 mt-4"><i
+                                    class="fa-solid fa-table-cells me-1"></i>
                                 PORTFOLIO</a></li>
                         <li><a href="./pages/team.html" class="mb-4 mt-4 "><i class="fa-solid fa-people-group me-1"></i>
                                 TEAM</a></li>
@@ -457,7 +464,7 @@
 
     <script src="./js/spinner.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/wow.min.js"></script>
+    <!-- <script src="./js/wow.min.js"></script> -->
     <script src="./js/script.js"></script>
 </body>
 

@@ -17,48 +17,56 @@
 </head>
 
 <body>
-    <div class="background">
-        <video loop autoplay muted id="video">
-            <source src="../video/video.mp4" type="video/mp4" />
-        </video>
-    </div>
     <div class="body" id="body">
         <!-- Start Header -->
-        <header>
-            <nav class="navbar navbar-expand-lg">
-                <div class="container">
-                    <a class="navbar-brand ms-2" href="#">Logo</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars icon"></i>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mt-auto mb-auto">
-                            <li class="nav-item">
-                                <a class="nav-link " href="../index.html">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="./about.html">ABOUT</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link " href="./services.html">SERVICES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./team.html">TEAM</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">CONTACT</a>
-                            </li>
-                        </ul>
+        <nav class="navbar navbar-expand-lg position-sticky">
+            <div class="container">
+                <a class="navbar-brand ms-2" href="#">Logo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fa-solid fa-bars icon"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mt-auto mb-auto">
+                        <li class="nav-item">
+                            <a class="nav-link " href="../index.html">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./about.html">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./services.html">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./portfolio.html">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./team.html">TEAM</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Header -->
+        <!-- start land -->
+        <div class="land pt-5 pb-5 justify-content-center d-flex align-items-center">
+            <div class="container position-relative justify-content-center d-flex align-items-center wow  animate__fadeInUp" data-wow-duration="2s">
+                <div class="text">
+                    <h1>About Us</h1>
+                    <div aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center">
+                            <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">About</li>
+                        </ol>
                     </div>
                 </div>
-            </nav>
-        </header>
-        <!-- End Header -->
+            </div>
+        </div>
+        <!-- end land -->
         <!-- Start About -->
         <div class="about pt-5 pb-5  wow  animate__fadeInUp" data-wow-duration="2s" id="about">
             <div class=" container">
@@ -66,11 +74,9 @@
                     <i class="fa-solid fa-people-group"></i> About
                 </div>
                 <div class="row">
-                    <div class="col-lg-12">
-                        <h1>Web3 is the future of the internet, where decentralization meets innovation, creating a
-                            beautiful and exciting<span> new world</span></h1>
-
-                        <img src="../images/about.jpg" class="img-fluid">
+                    <div class="col-lg-7">
+                        <h4>Web3 is the future of the internet, where decentralization meets innovation, creating a
+                            beautiful and exciting<span> new world</span></h4>
                         <p class="mt-4 mb-2">Digital Revolutions happen rarely and are marked by historic days and
                             moments. On 29 June 2007 the iPhone was presented, marking the birth of a new digital
                             revolution and witnessing the beginning of a new industry. Computers moved literally from
@@ -79,32 +85,59 @@
                             reached stratospheric market capitalizations, and produced astronomical revenues year after
                             year. Today, 5 billion people use the Internet, a number that continues to grow.
                         </p>
-                        <p class="mt-4 mb-2">The Internet is massive and it’s pervasive and now we are witnessing the
-                            birth of a new digital revolution. The Bitcoin White Paper was published on Oct 21, 2008 and
-                            that lone idea and blockchain network have given birth to over 1,000 blockchain networks.
-                            Amongst all these networks, Bitcoin and Etheruem represent more than 60% of the new industry
-                            known as web3.</p>
-                        <p class="mt-4 mb-2">Web3 is the next iteration of the Internet that 5 billion users across the
-                            world are using daily for many kinds of activities, such as ordering groceries, booking a
-                            vacation, playing online games, listening to music, or accessing their finances. </p>
-                        <p class="mt-4 mb-2">Web3 is a new digital revolution that is powered at its core by blockchain
-                            technologies like Bitcoin and Ethereum. Today, more than 350 thousand developers are
-                            building this new generation of Internet and Nemax Tech is here to build the Internet of
-                            tomorrow!</p>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="../images/about-1.jpg" class="img-fluid" alt="">
+                    </div>
+                </div>
+                <p class="mt-4 mb-2">The Internet is massive and it’s pervasive and now we are witnessing the
+                    birth of a new digital revolution. The Bitcoin White Paper was published on Oct 21, 2008 and
+                    that lone idea and blockchain network have given birth to over 1,000 blockchain networks.
+                    Amongst all these networks, Bitcoin and Etheruem represent more than 60% of the new industry
+                    known as web3.</p>
+                <p class="mt-4 mb-2">Web3 is the next iteration of the Internet that 5 billion users across the
+                    world are using daily for many kinds of activities, such as ordering groceries, booking a
+                    vacation, playing online games, listening to music, or accessing their finances. </p>
+                <p class="mt-4 mb-2">Web3 is a new digital revolution that is powered at its core by blockchain
+                    technologies like Bitcoin and Ethereum. Today, more than 350 thousand developers are
+                    building this new generation of Internet and Nemax Tech is here to build the Internet of
+                    tomorrow!</p>
+            </div>
+        </div>
+        <!-- End About -->
+        <video loop autoplay muted id="video">
+            <source src="../video/about.mp4" type="video/mp4" />
+        </video>
+        <!--  -->
+        <div class="goal pt-5 pb-5 wow  animate__fadeInUp" data-wow-duration="2s">
+            <div class="container">
+                <div class="title">
+                    <i class="fa-solid fa-bullseye me-1"></i> OUR GOAL
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="mb-2">We always strive to provide innovative and high-quality services to our clients, aiming to achieve the best results using the latest digital technologies and tools.</p>
+                        <p class="mt-4 mb-2">We are expanding the scope of our services and enhancing our capabilities in new areas, such as developing Web3 applications and artificial intelligence services, to meet our clients' ever-changing needs.</p>
+                        <p class="mt-4 mb-2">We aim to improve our current services and add new ones that help our clients achieve better results and improve their efficiency in their work.</p>
+                        <p class="mt-4 mb-2">We believe that innovation and dedication in our work are the keys to our success, and we work hard to provide services that exceed our clients' expectations and help them achieve new successes in their various fields.</p>
+                        
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="../images/goal.jpg" class="img-fluid" alt="">                        
                     </div>
                 </div>
             </div>
         </div>
-        <!-- End About -->
+        <!--  -->
         <!-- Start Team -->
-        <div class="team pt-5 pb-5">
+        <div class="team pt-5 pb-5  wow  animate__fadeInUp" data-wow-duration="2s">
             <div class="container">
                 <div class="title">
                     <i class="fa-solid fa-people-group me-1"></i> TEAM
                 </div>
-                <h1>Our Expert People Ready to <span>Help You</span></h1>
+                <h1 class="text-center">Our Expert People Ready to <span>Help You</span></h1>
                 <div class="row">
-                    <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeIn" data-wow-duration="2s">
+                    <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="card text-center position-relative">
                             <img src="../images/team/team-1.jpg" class="card-img-top" alt="...">
                             <div class="icons">
@@ -122,12 +155,12 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h3>Paolo Diomede</h3>
+                                <h4>Paolo Diomede</h4>
                                 <p>CEO & CTO</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeIn" data-wow-duration="4s">
+                    <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeInUp" data-wow-duration="2s">
                         <div class="card text-center position-relative">
                             <img src="../images/team/team-2.jpg" class="card-img-top" alt="...">
                             <div class="icons">
@@ -145,12 +178,12 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h3>Danila Natale</h3>
+                                <h4>Danila Natale</h4>
                                 <p>Brand Identity Designer</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeIn" data-wow-duration="5s">
+                    <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeInUp" data-wow-duration="3s">
                         <div class="card text-center position-relative">
                             <img src="../images/team/team-3.jpg" class="card-img-top" alt="...">
                             <div class="icons">
@@ -168,12 +201,12 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h3>Lidia Plamenova</h3>
+                                <h4>Lidia Plamenova</h4>
                                 <p>COO</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeIn" data-wow-duration="6s">
+                    <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeInUp" data-wow-duration="4s">
                         <div class="card text-center position-relative">
                             <img src="../images/team/team-4.jpg" class="card-img-top" alt="...">
                             <div class="icons">
@@ -191,7 +224,7 @@
                                 </div>
                             </div>
                             <div class="card-body">
-                                <h3>Margarita Drik</h3>
+                                <h4>Margarita Drik</h4>
                                 <p>CFO</p>
                             </div>
                         </div>
@@ -230,51 +263,6 @@
         </footer>
         <!-- End Footer -->
     </div>
-    <!-- Start Menu -->
-    <button class="btnMenu" id="btnMenu"><i class="fa-solid fa-bars-staggered"></i></button>
-    <div class="menuButton hide" id="menuButton">
-        <div class="container">
-            <div class="headerMenu d-flex justify-content-between align-items-center mt-3 ms-2 pe-2">
-                <h5>Menu</h5>
-                <button class="btnclose" id="btnclose"><i class="fa-solid fa-x"></i></button>
-            </div>
-            <div class="bodyMenu mt-5">
-                <div>
-                    <ul class="ul-1">
-                        <li><a href="../index.html" class="mt-4"><i class="fa-solid fa-house me-1"></i> HOME</a>
-                        </li>
-                        <li><a href="./about.html" class="mb-4 mt-4 active"><i class="fa-solid fa-user me-1"></i> ABOUT</a>
-                        </li>
-                        <li><a href="./services.html" class="mb-4 mt-4"><i class="fa-solid fa-server me-1"></i>
-                                SERVICES</a>
-                        </li>
-                        <li><a href="./portfolio.html" class="mb-4 mt-4"><i class="fa-solid fa-table-cells me-1"></i>
-                                PORTFOLIO</a></li>
-                        <li><a href="./team.html" class="mb-4 mt-4 "><i class="fa-solid fa-people-group me-1"></i>
-                                TEAM</a></li>
-
-                        <li><a href="./contact.html"><i class="fa-solid fa-envelope me-1"></i> CONTACT</a></li>
-                    </ul>
-                    <div class="footer mt-5">
-                        <p>Social</p>
-                        <div class="icons d-flex">
-                            <div class="icon me-4">
-                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            </div>
-                            <div class="icon me-4">
-                                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                            </div>
-                            <div class="icon">
-                                <a href="#"><i class="fa-brands fa-github">
-                                    </i></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End Menu -->
     <!-- Button Scroll -->
     <button class="buttonScroll" id="buttonScroll"><i class="fa-solid fa-chevron-up"></i></button>
     <!-- Button Scroll -->
