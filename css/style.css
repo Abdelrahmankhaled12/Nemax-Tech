@@ -9,11 +9,16 @@
 }
 
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 15px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: transparent;
+  background-color: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 30px;
 }
 
 body {
@@ -23,7 +28,7 @@ body {
   min-height: 100vh;
   padding: 0;
   color: #000000;
-  background: #FFFFFF;
+  background: #ffffff;
   line-height: 1.7;
 }
 
@@ -44,8 +49,7 @@ body * {
   border-radius: 25px;
   text-align: center;
   margin: 25px auto;
-  color:var(--primary-color);
-
+  color: var(--primary-color);
 }
 
 .buttonScroll {
@@ -62,18 +66,6 @@ body * {
   transition: 0.5s;
 }
 
-/* Start Background */
-/* .background video {
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.3;
-} */
-/* End Background */
 /* start Navbar */
 nav {
   top: 0;
@@ -111,8 +103,7 @@ nav button.navbar-toggler:focus {
 
 /* End Navbar */
 /* Start Home */
-
-.landing {
+.home {
   position: relative;
   background-image: url(../images/home.jpg);
   background-position: center center;
@@ -121,34 +112,38 @@ nav button.navbar-toggler:focus {
   height: 95vh;
 }
 
-.landing::before {
+.home::before {
   content: "";
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.481);
+  background-color: rgb(0 0 0 / 61%);
   top: 0;
   position: absolute;
   left: 0;
 }
 
-.home button {
+.home a {
   border: 1px solid var(--primary-color);
   background-color: var(--primary-color);
   color: white;
   border-radius: 13px;
   font-size: 15px;
   transition: 0.5s;
-  margin-top: 10px;
+  text-decoration: none;
+  display: block;
+  width: fit-content;
+  margin: 15px auto;
+  cursor:pointer;
 }
 
-.home button:hover {
+.home a:hover {
   color: var(--primary-color);
   background-color: white;
 }
 
 .home h3 {
   line-height: 1.5;
-  color:white;
+  color: white;
 }
 .home h3 span {
   color: var(--primary-color);
@@ -158,7 +153,7 @@ nav button.navbar-toggler:focus {
   color: #ffffff99;
   margin: 15px 0;
 }
-
+/* End Home */
 /* Start About */
 .about h4 {
   border-left: 3px solid var(--primary-color);
@@ -180,7 +175,7 @@ nav button.navbar-toggler:focus {
 }
 /* End About */
 /* start Services */
-.services h1 span {
+.services h2 span {
   color: var(--primary-color);
 }
 
@@ -206,15 +201,15 @@ nav button.navbar-toggler:focus {
     display: none;
   }
 }
-
+/* End Services */
 /* start team */
 .team h1 span {
   color: var(--primary-color);
 }
 
 .team .card {
-  border-radius:10px;
-  transition:0.7s;
+  border-radius: 10px;
+  transition: 0.7s;
   overflow: hidden;
 }
 
@@ -226,7 +221,7 @@ nav button.navbar-toggler:focus {
 
 .team .card h4 {
   margin-bottom: 0;
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
 .team .card p {
   color: var(--second-color);
@@ -237,7 +232,7 @@ nav button.navbar-toggler:focus {
   position: absolute;
   left: -50px;
   top: 5px;
-  transition:0.7s;
+  transition: 0.7s;
 }
 
 .team .icon a {
@@ -268,17 +263,17 @@ nav button.navbar-toggler:focus {
 .team .imageHide {
   position: absolute;
   opacity: 0.1;
-  transition:0.7s;
+  transition: 0.7s;
 }
 
 .team .card:hover .imageHide {
-  opacity:1;
+  opacity: 1;
 }
 
 .team .card:hover .icons {
-  left:10px;
+  left: 10px;
 }
-
+/* End team */
 /* Start Contact */
 .contact h1 span {
   color: var(--primary-color);
@@ -291,20 +286,22 @@ nav button.navbar-toggler:focus {
 .contact input {
   background-color: transparent;
   outline: none;
-  border: 1px solid #565656;
+  border: 1px solid var(--primary-color);
+  border-radius:10px;
 }
 
 .contact textarea {
   background-color: transparent;
   outline: none;
-  border: 1px solid #565656;
+  border: 1px solid var(--primary-color);
   height: 200px !important;
+  border-radius:10px;
 }
 
 .form-control:focus {
   color: #999999;
   background-color: transparent;
-  border-color: #565656;
+  border-color: var(--primary-color);
   outline: 0;
   box-shadow: none;
 }
@@ -327,34 +324,15 @@ nav button.navbar-toggler:focus {
 /* End Contact */
 /* Start Footer */
 footer {
-  background-color: black;
+  background-image: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)) , url(../images/footer.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #031b4e
 }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-@media (max-width: 776px) {
-  ul {
-    flex-direction: column;
-  }
-}
 footer h3 {
-  color:var(--primary-color);
-}
-footer ul li a {
-  color: white;
-  text-decoration: none;
-  transition: 0.5s;
-  display: block;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 5px;
-}
-
-ul li a:hover {
   color: var(--primary-color);
+  font-weight: 600;
 }
 
 footer .icons a {
@@ -379,8 +357,51 @@ footer .icons a i {
 }
 
 footer .icons a:hover {
-  background-color: transparent;
+  background-color: white;
   color: var(--primary-color);
+}
+
+footer .part-1 p {
+  font-size: 14px;
+}
+
+
+
+footer .part-2 ul {
+  padding: 0;
+}
+
+footer .part-2 ul li {
+  list-style: none;
+}
+
+footer .part-2 ul li a {
+  text-decoration: none;
+  color: #999999;
+  font-weight: 600;
+  font-size: 14px;
+  padding-left: 15px;
+  margin-bottom: 10px;
+  position: relative;
+  display: block;
+  transition: 0.5s;
+  width: fit-content;
+}
+
+footer .part-2 ul li a::before {
+  content: "\f105";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "fontAwesome";
+  font-size: 13px;
+  color: rgb(107, 106, 106);
+}
+
+footer .part-2 ul li a:hover {
+  letter-spacing: 1.4px;
+  color: #f7f8fc;
 }
 
 /* End Footer */
@@ -617,7 +638,6 @@ footer .icons a:hover {
   }
 }
 
-
 /* start land */
 .land {
   background-image: url(../images/landingAbout.jpg);
@@ -666,15 +686,13 @@ video {
   opacity: 0.8;
 }
 
-
 .goal img {
-  border-radius:15px;
+  border-radius: 15px;
 }
 
 .goal p {
-  color:var(--second-color);
-  position:relative;
+  color: var(--second-color);
+  position: relative;
   border-left: 3px solid var(--primary-color);
   padding-left: 10px;
 }
-
