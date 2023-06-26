@@ -213,8 +213,9 @@ nav button.navbar-toggler:focus {
 }
 
 .team .card {
-  /* background-color: transparent; */
   border-radius:10px;
+  transition:0.7s;
+  overflow: hidden;
 }
 
 .team .card img {
@@ -234,9 +235,11 @@ nav button.navbar-toggler:focus {
 
 .team .icons {
   position: absolute;
-  left: 10px;
+  left: -50px;
   top: 5px;
+  transition:0.7s;
 }
+
 .team .icon a {
   color: white;
   background-color: var(--primary-color);
@@ -260,6 +263,20 @@ nav button.navbar-toggler:focus {
   top: 50%;
   font-size: 18px;
   transform: translate(-50%, -50%);
+}
+
+.team .imageHide {
+  position: absolute;
+  opacity: 0.1;
+  transition:0.7s;
+}
+
+.team .card:hover .imageHide {
+  opacity:1;
+}
+
+.team .card:hover .icons {
+  left:10px;
 }
 
 /* Start Contact */
