@@ -17,7 +17,6 @@ window.onscroll = function () {
     };
 }
 
-
 // Start Website
 body.style.display = "none";
 
