@@ -36,9 +36,8 @@ body * {
   z-index: 2;
 }
 
-.body.hide {
-  opacity: 0.4;
-  z-index: 10;
+.body {
+  display: none;
 }
 
 .title {
@@ -133,7 +132,7 @@ nav button.navbar-toggler:focus {
   display: block;
   width: fit-content;
   margin: 15px auto;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .home a:hover {
@@ -205,27 +204,27 @@ nav button.navbar-toggler:focus {
 /* start Portfolio */
 .portfolio .box {
   border-bottom: 1px solid #5390d966;
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
 .portfolio .box:last-of-type {
   border-bottom: none;
 }
 
 .portfolio .box h1 {
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
 
 .portfolio .box h2 {
-  color:var(--primary-color);
+  color: var(--primary-color);
 }
 
 .portfolio .box p {
-  color:var(--second-color);
+  color: var(--second-color);
 }
 .portfolio .box img {
-  width:100%;
-  height:300px;
-  border-radius:10px;
+  width: 100%;
+  height: 300px;
+  border-radius: 10px;
 }
 
 .portfolio .smallScreenImage {
@@ -253,12 +252,12 @@ nav button.navbar-toggler:focus {
   width: fit-content;
   border: 1px solid var(--primary-color);
   margin: 10px auto;
-  transition:0.5s;
+  transition: 0.5s;
 }
 
 .portfolio a:hover {
-    background-color:white;
-    color:var(--primary-color);
+  background-color: white;
+  color: var(--primary-color);
 }
 
 /* End Portfolio */
@@ -347,7 +346,7 @@ nav button.navbar-toggler:focus {
   background-color: transparent;
   outline: none;
   border: 1px solid var(--primary-color);
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .contact textarea {
@@ -355,7 +354,7 @@ nav button.navbar-toggler:focus {
   outline: none;
   border: 1px solid var(--primary-color);
   height: 200px !important;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .form-control:focus {
@@ -384,10 +383,11 @@ nav button.navbar-toggler:focus {
 /* End Contact */
 /* Start Footer */
 footer {
-  background-image: linear-gradient(rgba(3, 27, 78, .3), rgba(3, 27, 78, .3)) , url(../images/footer.png);
+  background-image: linear-gradient(rgba(3, 27, 78, 0.3), rgba(3, 27, 78, 0.3)),
+    url(../images/footer.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #031b4e
+  background-color: #031b4e;
 }
 
 footer h3 {
@@ -424,8 +424,6 @@ footer .icons a:hover {
 footer .part-1 p {
   font-size: 14px;
 }
-
-
 
 footer .part-2 ul {
   padding: 0;
