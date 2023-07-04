@@ -674,7 +674,7 @@ footer .part-2 ul li a:hover {
   font-size: 40px;
   color: var(--primary-color);
   text-transform: uppercase;
-  animation: flip 2s;
+  animation: flip 1s;
   animation-delay: calc(.1s * var(--i))
 }
 
