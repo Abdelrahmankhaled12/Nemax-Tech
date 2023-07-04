@@ -1,7 +1,7 @@
 // Get Elements
-let body = document.getElementById("body");
+let body = document.querySelectorAll('[data-hide="hide"]');
 let buttonScroll = document.getElementById("buttonScroll");
-let spinner = document.getElementById("spinner");
+let waviy = document.getElementById("waviy");
 
 
 
@@ -18,14 +18,18 @@ window.onscroll = function () {
 }
 
 // Start Website
-body.style.display = "none";
+body.forEach(element=>{
+    element.style.display = "none";
+});
 
 // After 4 sec from start 
 window.onload = function () {
     setTimeout(() => {
         new WOW().init();
-        body.style.display = "block";
-        spinner.style.display = "none";
-    }, 2000)
+        body.forEach(element=>{
+            element.style.display = "block";
+        });
+        waviy.style.display = "none";
+    }, 3800)
 };
 

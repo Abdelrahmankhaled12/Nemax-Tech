@@ -36,9 +36,6 @@ body * {
   z-index: 2;
 }
 
-.body {
-  display: none;
-}
 
 .title {
   border: 1px solid var(--primary-color);
@@ -64,6 +61,15 @@ body * {
   opacity: 0;
   transition: 0.5s;
 }
+
+.video2 {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.8;
+}
+
 
 /* start Navbar */
 nav {
@@ -100,25 +106,34 @@ nav button.navbar-toggler:focus {
   box-shadow: none;
 }
 
+nav .logo {
+  width:65px;
+}
+
 /* End Navbar */
 /* Start Home */
 .home {
   position: relative;
-  background-image: url(../images/home.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 95vh;
+  background: #000;
 }
 
-.home::before {
-  content: "";
+.home video {
   width: 100%;
-  height: 100%;
-  background-color: rgb(0 0 0 / 61%);
-  top: 0;
-  position: absolute;
-  left: 0;
+  height: 88vh;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.home .container {
+  top:5%;
+  left:50px;
+}
+
+@media(max-width:767px) {
+  .home .container {
+    left:0px;
+  }
 }
 
 .home a {
@@ -131,7 +146,7 @@ nav button.navbar-toggler:focus {
   text-decoration: none;
   display: block;
   width: fit-content;
-  margin: 15px auto;
+  margin: 15px 0;
   cursor: pointer;
 }
 
@@ -635,66 +650,41 @@ footer .part-2 ul li a:hover {
   color: #999999;
 }
 
-.spinner {
-  width: 44.8px;
-  height: 44.8px;
-  animation: spinner-y0fdc1 2s infinite ease;
-  transform-style: preserve-3d;
+
+.backgroundWaviy {
+  background-color:#FFFFFF;
+  width:100%;
+  height:100vh;
+  z-index:1000000;
+  position:absolute;
+}
+
+
+.waviy {
   position: fixed;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 45%;
   z-index: 10000000000;
 }
 
-.spinner > div {
-  background-color: rgba(71, 75, 255, 0.2);
-  height: 100%;
-  position: absolute;
-  width: 100%;
-  border: 2.2px solid #474bff;
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  animation: flip 2s;
+  animation-delay: calc(.2s * var(--i))
 }
 
-.spinner div:nth-of-type(1) {
-  transform: translateZ(-22.4px) rotateY(180deg);
-}
-
-.spinner div:nth-of-type(2) {
-  transform: rotateY(-270deg) translateX(50%);
-  transform-origin: top right;
-}
-
-.spinner div:nth-of-type(3) {
-  transform: rotateY(270deg) translateX(-50%);
-  transform-origin: center left;
-}
-
-.spinner div:nth-of-type(4) {
-  transform: rotateX(90deg) translateY(-50%);
-  transform-origin: top center;
-}
-
-.spinner div:nth-of-type(5) {
-  transform: rotateX(-90deg) translateY(50%);
-  transform-origin: bottom center;
-}
-
-.spinner div:nth-of-type(6) {
-  transform: translateZ(22.4px);
-}
-
-@keyframes spinner-y0fdc1 {
-  0% {
-    transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
-  }
-
-  50% {
-    transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
-  }
-
-  100% {
-    transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg) 
   }
 }
+
+
 
 /* start land */
 .land {
@@ -736,13 +726,6 @@ footer .part-2 ul li a:hover {
   font-weight: 600;
 }
 
-video {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  z-index: -1;
-  opacity: 0.8;
-}
 
 .goal img {
   border-radius: 15px;

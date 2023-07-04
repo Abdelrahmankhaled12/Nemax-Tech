@@ -18,21 +18,26 @@
 </head>
 
 <body>
-    <!-- Start Spinner -->
-    <div class="spinner" id="spinner">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
+    <!-- Start animation  -->
+    <div class="backgroundWaviy" id="waviy">
+        <div class="waviy">
+            <span style="--i:1">N</span>
+            <span style="--i:2">e</span>
+            <span style="--i:3">m</span>
+            <span style="--i:4">a</span>
+            <span style="--i:5">x</span>
+            <span style="--i:6">T</span>
+            <span style="--i:7">e</span>
+            <span style="--i:8">c</span>
+            <span style="--i:9">h</span>
+        </div>
     </div>
-    <!-- End Spinner -->
+    <!-- End animation  -->
     <div class="body" id="body">
         <!-- Start Header -->
         <nav class="navbar navbar-expand-lg position-sticky">
             <div class="container">
-                <a class="navbar-brand ms-2" href="#">Logo</a>
+                <a href="./index.html"><img src="./images/logo.ico" class="img-fluid logo" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -64,10 +69,12 @@
         </nav>
         <!-- End Header -->
         <!-- Start Home -->
-        <div class="home pb-5 pt-5 justify-content-center d-flex align-items-center">
-            <div class="container  wow animate__fadeInUp" data-wow-duration="2s">
-                <div class="row justify-content-center">
-                    <div class="col-lg-9 mt-5 text-center">
+        <div class="home">
+            <video src="./video/cover.mp4" type="video/mp4" autoplay muted id="video">
+            </video>
+            <div class="container position-absolute  wow animate__fadeInUp" data-wow-duration="2s" data-hide="hide">
+                <div class="row">
+                    <div class="col-lg-6 mt-5">
                         <h3> We are a specialized company providing cutting-edge services in the exciting realm of
                             <span> Web3 technology</span>.
                         </h3>
@@ -84,7 +91,7 @@
         </div>
         <!-- End Home -->
         <!-- Start About -->
-        <div class="about pt-5 pb-5  wow  animate__fadeInUp" data-wow-duration="2s" id="about">
+        <div class="about pt-5 pb-5  wow  animate__fadeInUp" data-wow-duration="2s" id="about" data-hide="hide">
             <div class=" container">
                 <div class="title">
                     <i class="fa-solid fa-people-group"></i> About
@@ -128,11 +135,13 @@
             </div>
         </div>
         <!-- End About -->
-        <video loop autoplay muted id="video">
+        <!-- Start Video -->
+        <video loop autoplay muted id="video" class="video2" data-hide="hide">
             <source src="./video/video.mp4" type="video/mp4" />
         </video>
+        <!-- End Video -->
         <!-- Start Services -->
-        <div class="services pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s">
+        <div class="services pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s" data-hide="hide">
             <div class="container">
                 <div class="title">
                     <i class="fa-solid fa-server me-1"></i> SERVICES
@@ -225,7 +234,7 @@
         </div>
         <!-- End Services -->
         <!-- Start Portfolio -->
-        <div class="portfolio pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s">
+        <div class="portfolio pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s" data-hide="hide">
             <div class="container">
                 <div class="title">
                     <i class="fa-solid fa-server me-1"></i> PORTFOLIO
@@ -282,21 +291,18 @@
         </div>
         <!-- End Portfolio -->
         <!-- Start Team -->
-        <div class="team pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s">
+        <div class="team pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s" data-hide="hide">
             <div class="container">
                 <div class="title">
                     <i class="fa-solid fa-people-group me-1"></i> TEAM
                 </div>
                 <h1 class="text-center">Our Expert People Ready to <span>Help You</span></h1>
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeInUp" data-wow-duration="1s">
                         <div class="card text-center position-relative">
                             <img src="./images/team/black-1.jpg" class="card-img-top" alt="...">
                             <img src="./images/team/team-1.jpg" class="card-img-top imageHide" alt="...">
                             <div class="icons">
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                </div>
                                 <div class="icon">
                                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                                 </div>
@@ -315,36 +321,9 @@
                     </div>
                     <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeInUp" data-wow-duration="2s">
                         <div class="card text-center position-relative">
-                            <img src="./images/team/black-2.jpg" class="card-img-top" alt="...">
-                            <img src="./images/team/team-2.jpg" class="card-img-top imageHide" alt="...">
-                            <div class="icons">
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-                                </div>
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <h4>Danila Natale</h4>
-                                <p>Brand Identity Designer</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeInUp" data-wow-duration="3s">
-                        <div class="card text-center position-relative">
                             <img src="./images/team/black-3.jpg" class="card-img-top" alt="...">
                             <img src="./images/team/team-3.jpg" class="card-img-top imageHide" alt="...">
                             <div class="icons">
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                </div>
                                 <div class="icon">
                                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                                 </div>
@@ -361,14 +340,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeInUp" data-wow-duration="4s">
+                    <div class="col-lg-3 col-md-6 mt-3 wow animate__fadeInUp" data-wow-duration="3s">
                         <div class="card text-center position-relative">
                             <img src="./images/team/black-4.jpg" class="card-img-top" alt="...">
                             <img src="./images/team/team-4.jpg" class="card-img-top imageHide" alt="...">
                             <div class="icons">
-                                <div class="icon">
-                                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                                </div>
                                 <div class="icon">
                                     <a href=""><i class="fa-brands fa-twitter"></i></a>
                                 </div>
@@ -390,7 +366,7 @@
         </div>
         <!-- End Team -->
         <!-- Start Contact -->
-        <div class="contact pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s" id="contact">
+        <div class="contact pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s" id="contact" data-hide="hide">
             <div class="container">
                 <div class="title">
                     <i class="fa-solid fa-people-group me-1"></i> CONTACT
@@ -433,7 +409,7 @@
         </div>
         <!-- End Contact -->
         <!-- Start Footer -->
-        <footer class="pb-5 pt-5">
+        <footer class="pb-5 pt-5" data-hide="hide">
             <div class="part position-relative">
                 <div class="container">
                     <div class="row">
@@ -477,7 +453,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 p-sm-3">
                             <div class="part-4 mt-5">
-                                <h3>logo</h3>
+                                <img src="./images/logoFooter.png" alt="">
                             </div>
                         </div>
                     </div>
