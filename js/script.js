@@ -30,6 +30,6 @@ window.onload = function () {
             element.style.display = "block";
         });
         waviy.style.display = "none";
-    }, 3800)
+    }, 1650)
 };
 

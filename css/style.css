@@ -36,7 +36,6 @@ body * {
   z-index: 2;
 }
 
-
 .title {
   border: 1px solid var(--primary-color);
   width: fit-content;
@@ -69,8 +68,39 @@ body * {
   z-index: -1;
   opacity: 0.8;
 }
+/* start animation */
+.backgroundWaviy {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100vh;
+  z-index: 1000000;
+  position: absolute;
+}
 
+.waviy {
+  position: fixed;
+  top: 45%;
+  left: 45%;
+  z-index: 10000000000;
+}
 
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 40px;
+  color: var(--primary-color);
+  text-transform: uppercase;
+  animation: flip 1s;
+  animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes flip {
+  0%,
+  80% {
+    transform: rotateY(360deg);
+  }
+}
+/* End animation */
 /* start Navbar */
 nav {
   top: 0;
@@ -107,7 +137,7 @@ nav button.navbar-toggler:focus {
 }
 
 nav .logo {
-  width:65px;
+  width: 65px;
 }
 
 /* End Navbar */
@@ -126,13 +156,13 @@ nav .logo {
 }
 
 .home .container {
-  top:5%;
-  left:50px;
+  top: 5%;
+  left: 50px;
 }
 
-@media(max-width:767px) {
+@media (max-width: 767px) {
   .home .container {
-    left:0px;
+    left: 0px;
   }
 }
 
@@ -560,132 +590,6 @@ footer .part-2 ul li a:hover {
   letter-spacing: 1.5px;
 }
 /* End contactPage */
-
-.btnMenu {
-  background-color: black;
-  color: white;
-  border: 1px solid #565656;
-  border-radius: 50%;
-  font-size: 20px;
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  right: 40px;
-  top: 40px;
-  z-index: 100;
-  opacity: 0;
-  transition: 0.5s;
-}
-
-.menuButton {
-  background-color: #191919;
-  transition: 0.5s;
-}
-
-.menuButton.hide {
-  transform: translateX(100%);
-}
-
-.headerMenu h5 {
-  color: #999999;
-}
-
-.headerMenu .btnclose {
-  color: white !important;
-  background-color: transparent;
-  border: none;
-}
-
-.menuButton {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: black;
-  z-index: 20000;
-  width: 300px;
-  height: 100vh;
-}
-
-.bodyMenu {
-  display: flex;
-  justify-content: center;
-}
-
-.menuButton .container a {
-  text-decoration: none;
-  color: #999999;
-  display: block;
-  font-size: 13px;
-  transition: 0.5s;
-}
-
-.menuButton .container a i {
-  color: #999999;
-  transition: 0.5s;
-}
-
-.menuButton .container a.active {
-  color: white;
-}
-
-.menuButton .container a.active i {
-  color: var(--primary-color);
-}
-
-.menuButton .container a:hover {
-  color: white;
-  letter-spacing: 1.4px;
-}
-
-.menuButton .container a:hover i {
-  color: var(--primary-color);
-}
-
-.menuButton .container p {
-  color: #999999;
-}
-
-.menuButton .container .icon a {
-  font-size: 15px;
-  color: #999999;
-}
-
-
-.backgroundWaviy {
-  background-color:#FFFFFF;
-  width:100%;
-  height:100vh;
-  z-index:1000000;
-  position:absolute;
-}
-
-
-.waviy {
-  position: fixed;
-  top: 45%;
-  left: 45%;
-  z-index: 10000000000;
-}
-
-
-.waviy span {
-  position: relative;
-  display: inline-block;
-  font-size: 40px;
-  color: var(--primary-color);
-  text-transform: uppercase;
-  animation: flip 1s;
-  animation-delay: calc(.1s * var(--i))
-}
-
-@keyframes flip {
-  0%,80% {
-    transform: rotateY(360deg) 
-  }
-}
-
-
-
 /* start land */
 .land {
   background-image: url(../images/landingAbout.jpg);
@@ -725,8 +629,8 @@ footer .part-2 ul li a:hover {
   font-size: 18px;
   font-weight: 600;
 }
-
-
+/* End land */
+/* start goal */
 .goal img {
   border-radius: 15px;
 }
@@ -737,3 +641,4 @@ footer .part-2 ul li a:hover {
   border-left: 3px solid var(--primary-color);
   padding-left: 10px;
 }
+/* End goal */

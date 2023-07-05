@@ -17,16 +17,16 @@
 </head>
 
 <body>
-        <!-- Start Spinner -->
-        <div class="spinner" id="spinner">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+    <!-- Start animation  -->
+    <div class="backgroundWaviy" id="waviy">
+        <div class="waviy">
+            <span style="--i:1">Ne</span>
+            <span style="--i:2">ma</span>
+            <span style="--i:3">x</span>
+            <span style="--i:4">Tech</span>
         </div>
-        <!-- End Spinner -->
+    </div>
+    <!-- End animation  -->
     <div class="body" id="body">
         <!-- Start Header -->
         <nav class="navbar navbar-expand-lg position-sticky">
@@ -65,7 +65,7 @@
         <!-- start land -->
         <div class="land pt-5 pb-5 justify-content-center d-flex align-items-center">
             <div class="container position-relative justify-content-center d-flex align-items-center wow  animate__fadeInUp"
-                data-wow-duration="2s">
+                data-wow-duration="2s" data-hide="hide">
                 <div class="text">
                     <h1>CONTACT</h1>
                     <div aria-label="breadcrumb">
@@ -79,7 +79,7 @@
         </div>
         <!-- end land -->
         <!-- Start Contact -->
-        <div class="contact contactPage pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s" id="contact">
+        <div class="contact contactPage pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s" id="contact" data-hide="hide">
             <div class="container">
                 <div class="title">
                     <i class="fa-solid fa-people-group me-1"></i> CONTACT
@@ -148,8 +148,7 @@
 
             </div>
         </div>
-        <!-- End Contact -->
-        
+        <!-- End Contact --> 
         <!-- Start Footer -->
         <footer class="pb-5 pt-5" data-hide="hide">
             <div class="part position-relative">
@@ -195,7 +194,7 @@
                         </div>
                         <div class="col-lg-3 col-md-6 p-sm-3">
                             <div class="part-4 mt-5">
-                                <img src="./images/logoFooter.png" alt="">
+                                <img src="../images/logoFooter.png" alt="">
                             </div>
                         </div>
                     </div>
@@ -203,7 +202,6 @@
             </div>
         </footer>
         <!-- End Footer -->
-        
     </div>
     <!-- Button Scroll -->
     <button class="buttonScroll" id="buttonScroll"><i class="fa-solid fa-chevron-up"></i></button>
