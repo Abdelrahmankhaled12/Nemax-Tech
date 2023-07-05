@@ -17,16 +17,6 @@
 </head>
 
 <body>
-    <!-- Start animation  -->
-    <div class="backgroundWaviy" id="waviy">
-        <div class="waviy">
-            <span style="--i:1">Ne</span>
-            <span style="--i:2">ma</span>
-            <span style="--i:3">x</span>
-            <span style="--i:4">Tech</span>
-        </div>
-    </div>
-    <!-- End animation  -->
     <div class="body" id="body">
         <!-- Start Header -->
         <nav class="navbar navbar-expand-lg position-sticky">
@@ -65,7 +55,7 @@
         <!-- start land -->
         <div class="land pt-5 pb-5 justify-content-center d-flex align-items-center">
             <div class="container position-relative justify-content-center d-flex align-items-center wow  animate__fadeInUp"
-                data-wow-duration="2s"  data-hide="hide">
+                data-wow-duration="2s" data-hide="hide">
                 <div class="text">
                     <h1>Portfolio</h1>
                     <div aria-label="breadcrumb">
@@ -79,7 +69,7 @@
         </div>
         <!-- end land -->
         <!-- Start Portfolio -->
-        <div class="portfolio pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s"  data-hide="hide">
+        <div class="portfolio pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s" data-hide="hide">
             <div class="container">
                 <div class="title">
                     <i class="fa-solid fa-server me-1"></i> PORTFOLIO
@@ -175,7 +165,7 @@
                 </div>
             </div>
         </div>
-        <!-- End Portfolio -->    
+        <!-- End Portfolio -->
         <!-- Start Footer -->
         <footer class="pb-5 pt-5" data-hide="hide">
             <div class="part position-relative">
@@ -186,7 +176,8 @@
                                 <h3>
                                     Nemax Tech
                                 </h3>
-                                <p class="text-white-50 pe-1 pt-3">We are a specialized company providing cutting-edge services
+                                <p class="text-white-50 pe-1 pt-3">We are a specialized company providing cutting-edge
+                                    services
                                     in the exciting realm of Web3 technology.</p>
                             </div>
                         </div>
@@ -229,7 +220,6 @@
             </div>
         </footer>
         <!-- End Footer -->
-        
     </div>
     <!-- Button Scroll -->
     <button class="buttonScroll" id="buttonScroll"><i class="fa-solid fa-chevron-up"></i></button>
@@ -237,7 +227,20 @@
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/wow.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script>
+        let buttonScroll = document.getElementById("buttonScroll");
+        window.onscroll = function () {
+            if (window.scrollY >= 300) {
+                buttonScroll.style.opacity = "1";
+            } else {
+                buttonScroll.style.opacity = "0";
+            }
+            buttonScroll.onclick = function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            };
+        }
+        new WOW().init();
+    </script>
 </body>
 
 </html>

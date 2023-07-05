@@ -378,54 +378,6 @@ nav .logo {
   left: 10px;
 }
 /* End team */
-/* Start Contact */
-.contact h1 span {
-  color: var(--primary-color);
-}
-
-.contact label {
-  color: #999999;
-}
-
-.contact input {
-  background-color: transparent;
-  outline: none;
-  border: 1px solid var(--primary-color);
-  border-radius: 10px;
-}
-
-.contact textarea {
-  background-color: transparent;
-  outline: none;
-  border: 1px solid var(--primary-color);
-  height: 200px !important;
-  border-radius: 10px;
-}
-
-.form-control:focus {
-  color: #999999;
-  background-color: transparent;
-  border-color: var(--primary-color);
-  outline: 0;
-  box-shadow: none;
-}
-
-.contact .buttonStyle {
-  color: white;
-  background-color: var(--primary-color);
-  padding: 10px 40px;
-  border-radius: 30px;
-  border: 1px solid var(--primary-color);
-  display: block;
-  text-align: center;
-  transition: 0.5s;
-}
-
-.contact .buttonStyle:hover {
-  color: var(--primary-color);
-  background-color: transparent;
-}
-/* End Contact */
 /* Start Footer */
 footer {
   background-image: linear-gradient(rgba(3, 27, 78, 0.3), rgba(3, 27, 78, 0.3)),
@@ -573,15 +525,15 @@ footer .part-2 ul li a:hover {
 }
 
 .contactPage .icon i {
-  font-size: 20px;
+  font-size: 35px;
   color: var(--primary-color);
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .contactPage .icon p {
   margin: 0;
   color: var(--second-color);
-  font-size: 20px;
+  font-size: 25px;
   cursor: pointer;
   transition: 0.5s;
 }

@@ -17,16 +17,6 @@
 </head>
 
 <body>
-    <!-- Start animation  -->
-    <div class="backgroundWaviy" id="waviy">
-        <div class="waviy">
-            <span style="--i:1">Ne</span>
-            <span style="--i:2">ma</span>
-            <span style="--i:3">x</span>
-            <span style="--i:4">Tech</span>
-        </div>
-    </div>
-    <!-- End animation  -->
     <div class="body" id="body">
         <!-- Start Header -->
         <nav class="navbar navbar-expand-lg position-sticky">
@@ -65,7 +55,7 @@
         <!-- start land -->
         <div class="land pt-5 pb-5 justify-content-center d-flex align-items-center">
             <div class="container position-relative justify-content-center d-flex align-items-center wow  animate__fadeInUp"
-                data-wow-duration="2s" data-hide="hide">
+                data-wow-duration="2s">
                 <div class="text">
                     <h1>CONTACT</h1>
                     <div aria-label="breadcrumb">
@@ -79,7 +69,7 @@
         </div>
         <!-- end land -->
         <!-- Start Contact -->
-        <div class="contact contactPage pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s" id="contact" data-hide="hide">
+        <div class="contact contactPage pt-5 pb-5 wow animate__fadeInUp" data-wow-duration="2s" id="contact">
             <div class="container">
                 <div class="title">
                     <i class="fa-solid fa-people-group me-1"></i> CONTACT
@@ -93,52 +83,17 @@
                         full potential of Web3 technology and achieve your business goals.</p>
 
                     <div class="row">
-                        <div class="col-lg-8">
-                            <form class="mt-4">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput"
-                                                placeholder="name@example.com" required />
-                                            <label for="floatingInput">Your Full Name</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-12">
-                                        <div class="form-floating mb-3">
-                                            <input type="email" class="form-control" id="floatingInput"
-                                                placeholder="name@example.com" required>
-                                            <label for="floatingInput">Your Email Address</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-floating mb-3">
-                                            <input type="text" class="form-control" id="floatingInput"
-                                                placeholder="name@example.com" required>
-                                            <label for="floatingInput">Your Number Phone</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a comment here"
-                                                id="floatingTextarea" cols="30" rows="10"></textarea>
-                                            <label for="floatingTextarea">Write your message here...</label>
-                                        </div>
-                                    </div>
-                                </div>
-                                <button type="submit" class="buttonStyle mt-4">Send Message</button>
-                            </form>
-                        </div>
                         <div class="col-lg-4">
                             <div class="icons">
                                 <div class="icon  d-flex  align-items-center mt-3">
                                     <i class="fa-solid fa-envelope"></i>
                                     <p>web3@gmail.com</p>
                                 </div>
-                                <div class="icon  d-flex  align-items-center  mt-2">
+                                <div class="icon  d-flex  align-items-center  mt-3">
                                     <i class="fa-brands fa-instagram"></i>
                                     <p>web3</p>
                                 </div>
-                                <div class="icon  d-flex  align-items-center  mt-2">
+                                <div class="icon  d-flex  align-items-center  mt-3">
                                     <i class="fa-brands fa-twitter"></i>
                                     <p>web3</p>
                                 </div>
@@ -148,7 +103,7 @@
 
             </div>
         </div>
-        <!-- End Contact --> 
+        <!-- End Contact -->
         <!-- Start Footer -->
         <footer class="pb-5 pt-5" data-hide="hide">
             <div class="part position-relative">
@@ -159,7 +114,8 @@
                                 <h3>
                                     Nemax Tech
                                 </h3>
-                                <p class="text-white-50 pe-1 pt-3">We are a specialized company providing cutting-edge services
+                                <p class="text-white-50 pe-1 pt-3">We are a specialized company providing cutting-edge
+                                    services
                                     in the exciting realm of Web3 technology.</p>
                             </div>
                         </div>
@@ -209,7 +165,20 @@
 
     <script src="../js/bootstrap.bundle.min.js"></script>
     <script src="../js/wow.min.js"></script>
-    <script src="../js/script.js"></script>
+    <script>
+        let buttonScroll = document.getElementById("buttonScroll");
+        window.onscroll = function () {
+            if (window.scrollY >= 300) {
+                buttonScroll.style.opacity = "1";
+            } else {
+                buttonScroll.style.opacity = "0";
+            }
+            buttonScroll.onclick = function () {
+                window.scrollTo({ top: 0, behavior: "smooth" });
+            };
+        }
+        new WOW().init();
+    </script>
 </body>
 
 </html>
