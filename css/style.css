@@ -217,6 +217,13 @@ nav .logo {
   width: 100%;
   border-radius: 10px;
 }
+
+.about .img {
+  width: 100%;
+  height: auto;
+  max-width: 800px;
+}
+
 /* End About */
 /* start Services */
 .services h2 span {
