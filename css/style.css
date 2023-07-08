@@ -466,6 +466,11 @@ footer .part-2 ul li a:hover {
   color: #f7f8fc;
 }
 
+footer p.footerPar {
+  font-size: 15px;
+
+}
+
 /* End Footer */
 /* Start TeamPage */
 .teamPage .box {
